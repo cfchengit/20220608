@@ -8,7 +8,7 @@ iframe{
 	width: 100%;
 	height: 100vh;	
 	position: absolute;
-	left: 50%;
+	left: 0;
 	top: 0;	
 	z-index: inherit;
 }
@@ -17,7 +17,7 @@ z-index: 200;
 	width: 20%;
 	height: 100px;	
 	position: absolute;
-	left: 10px;
+	left: 90vh;
 	top: 50vh;
 	background-color: #000;
 }
