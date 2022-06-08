@@ -1,0 +1,23 @@
+body{
+color:#ff0;
+background-color: #000;
+
+}
+
+iframe{
+	width: 100%;
+	height: 100vh;	
+	position: absolute;
+	left: 0;
+	top: 0;	
+	z-index: inherit;
+}
+.title1{
+z-index: 200;
+	width: 20%;
+	height: 100px;	
+	position: absolute;
+	left: 90vh;
+	top: 50vh;
+	background-color: #000;
+}
