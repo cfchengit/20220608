@@ -2,17 +2,17 @@ body{
 color:#ff0;
 background-color: #000;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 
 }
 
 iframe{
 	width: 100%;
-	height: 100vh;	
+	height: 100%;	
 	position: absolute;
-	left:25vw;
+	left:0;
 	top: 0;	
-	z-index: inherit;
+	/*z-index: inherit;*/
 }
 .title1{
 z-index: 200;
