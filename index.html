@@ -1,15 +1,60 @@
+
 <html>
-    <head>
-    <link rel="stylesheet" href="./style.css">
-    </head>
+  <head> 
+    <link rel="stylesheet" href="week7.css"/>
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+  </head>
+  <body>
+  <!-- Swiper -->
+  <div id="app">
+    <div class="swiper carousel">
+      <div class="swiper-wrapper">
+        <figure class="swiper-slide" v-for="(card,id) in cards">
+            <!-- <div class="box"> 
+              <div class="top">  -->
 
-<body>
-		<iframe src="bg.html" frameborder=0 scrolling="no" noresize marginhight=0 marginwidth=0></iframe>
-<div class="title1">
-	<h1>標題22</h1>
-	<p>副標</p>
-</div>
-	
+                <figcaption class="swiper-description">
+                  <h2 class="name"> {{card.title}} <span class="smalltext">IlluminationBooks</span></h2>
+                  <p>
+                    The Bulldog is a British breed of dog of mastiff type. It may also
+                    be known as the English Bulldog or British Bulldog. It is a medium
+                    sized, muscular dog of around 40–55 lb.
+                  </p>
+                </figcaption>
+                
+                <!-- <div class="tag"> 
+                  <div class="cirbutton"> </div>
+                </div>
+              </div> -->
+              <!-- <div class="bottom">  -->
+                <!-- {{card.link}} -->
+                <!-- <a v-bind:href="card.link">連結</a>       -->
+                <iframe v-bind:src="card.link" v-bind:width="card.width" v-bind:height="card.height" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Memory Game"></iframe>
+                <!-- <div class="buttons"> 
+                  <div class="btn">前往網站</div>
+                  <div class="btn">更多訊息 </div>
+                </div> -->
+              <!-- </div>
+            </div> -->
 
-</body>
+        </figure>
+      </div>
+      <button class="swiper-button-next" type="button"></button>
+          <button class="swiper-button-prev" type="button"></button>
+          <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.8/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="week7.js"></script>
+  <!-- Initialize Swiper -->
+
+  </body>
 </html>

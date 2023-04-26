@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 30px;
+}
+
+
+
+/* a {
+  color: initial;
+  text-decoration: initial;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px, -5px);
+}
+
+.top {
+  background-image: url(https://pic.pimg.tw/iting35/1500815907-2788180835.jpg?v=1500815980);
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.top .tag {
+  width: 25px;
+  height: 50px;
+  background-color: #ff8244;
+  float: right;
+  margin-right: 20px;
+}
+
+.top .name {
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  bottom: 0px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.top .name .smallText {
+  font-size: 14px;
+}
+
+.cirbutton {
+  width: 50px;
+  height: 50px;
+  background-color: #ff7526;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
+
+.bottom {
+  padding: 10px 20px 20px 20px;
+  height: 70%
+}
+
+.bottom li {
+  padding: 5px 0px;
+}
+
+.bottom h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.bottom ul {
+  list-style: none;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+}
+
+.btnWebsite {
+  background-color: #ff7526;
+  color: white;
+  transition: 0.5s;
+}
+
+.btnWebsite:hover {
+  background-color: #ff9860;
+}
+
+.btnNews {
+  border: solid 1px black;
+  float: right;
+}
+
+.btnNews:hover {
+  background-color: #eee;
+} */
+
+
+.swiper {
+  width: 80vw;
+  height: 80vh;
+  
+}
+
+.swiper-slide {
+  position: relative;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ff7526; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper button {
+  width: 50px;
+  height: 50px;
+  color: #f80909;
+  background: transparent;
+  border: solid 5px rgb(185, 237, 73);
+  outline: none;
+  font-weight:bold;
+  transition: opacity 0.25s;
+  
+}
+
+/* 滑鼠移入後顯示的畫面透明度為0.8 */
+.swiper button:hover {  
+  opacity: 0.8;
+}
+/* 按鈕的文字大小 */
+.swiper button::before, .swiper button::after {
+  font-size: 50px;
+
+}
+
+.swiper-pagination-bullet {
+  background-color: #edeaf1;
+}
+
+.swiper-pagination {
+  background-color: #edeaf1;
+  z-index: -2;
+  font-size: 20px;
+  
+  /* color: #08f708; */
+}
+
+.swiper-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  padding: 50px 25px 25px;
+  color: #14f50c;
+}
+
+.swiper-description::before {
+  content: "淡江大學教育科技學系";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 20%);
+}
+
+.swiper-description h2 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.swiper-description p {
+  font-size: 14px;
+  max-width: 50%;
+  margin-bottom: 15px;
+}
